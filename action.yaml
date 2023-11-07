@@ -1,0 +1,15 @@
+
+name: 'Get SHA from REF'
+description: This action returns a commit sha from specific ref
+inputs:
+  ref:
+    description: 'ref'
+    required: true
+outputs:
+  sha:
+    description: 'Last commit sha from ref in the following pattern: [A-Za-z0-9]'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.branch }}
