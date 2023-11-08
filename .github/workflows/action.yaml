@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Test
-      uses: matheusraz/ref-sha@main
+      uses: matheusraz/ref-sha@staging/v6
       id: get_sha
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
