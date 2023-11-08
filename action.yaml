@@ -7,7 +7,6 @@ inputs:
     required: true
   length:
     description: 'Length of shortened sha'
-    default: 7
     required: false
 outputs:
   sha:

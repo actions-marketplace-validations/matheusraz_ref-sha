@@ -3,6 +3,8 @@
 REF_NAME=$1
 REF_LENGTH=$2
 
+echo "$REF_NAME | $REF_LENGTH"
+
 SHA=$(curl -L \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer ${$GITHUB_TOKEN}" \
