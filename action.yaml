@@ -1,8 +1,9 @@
 
 name: 'Get SHA from REF'
 description: This action returns a commit sha from specific ref
-icon: activity
-color: green
+branding:
+  icon: activity
+  color: green
 inputs:
   ref:
     description: 'Repo ref to checkout and retrieve commit (Branch name or tag)'
