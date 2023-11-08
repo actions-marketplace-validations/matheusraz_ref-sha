@@ -9,10 +9,8 @@ jobs:
     - name: Test
       uses: matheusraz/ref-sha@main
       id: get_sha
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        ref: main
+        ref: staging/v6
     
     - name: Result
       run: echo "${{ steps.get_sha.outputs.sha }}"
