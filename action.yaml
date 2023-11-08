@@ -11,7 +11,7 @@ inputs:
     required: false
 outputs:
   sha:
-    description: 'Last commit sha from ref in the following pattern: [A-Za-z0-9]'
+    description: 'Last commit sha from ref in the following pattern: [a-z0-9]'
 runs:
   using: 'docker'
   image: 'Dockerfile'
