@@ -13,7 +13,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         ref: staging/v6
-        length: '14'
+        length: 14
     
     - name: Result
       run: echo "${{ steps.get_sha.outputs.sha }}"

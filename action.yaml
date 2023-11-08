@@ -7,8 +7,8 @@ inputs:
     required: true
   length:
     description: 'Length of shortened sha'
-    default: '7'
-    required: false
+    default: 7
+    required: true
 outputs:
   sha:
     description: 'Last commit sha from ref in the following pattern: [A-Za-z0-9]'
