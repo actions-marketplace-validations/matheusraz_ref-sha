@@ -1,7 +1,7 @@
 #!/bin/bash
 
-REF_LENGTH=$INPUT_LENGTH
-REF_NAME=$INPUT_REF
+REF_NAME=$1
+REF_LENGTH=$2
 
 SHA=$(curl -L \
   -H "Accept: application/vnd.github+json" \
