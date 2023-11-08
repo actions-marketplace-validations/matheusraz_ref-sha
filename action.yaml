@@ -3,8 +3,12 @@ name: 'Get SHA from REF'
 description: This action returns a commit sha from specific ref
 inputs:
   ref:
-    description: 'ref'
+    description: 'Repo ref to checkout and retrieve commit (Branch name or tag)'
     required: true
+  length:
+    description: 'Length of shortened sha'
+    default: '7'
+    required: false
 outputs:
   sha:
     description: 'Last commit sha from ref in the following pattern: [A-Za-z0-9]'
