@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: matheusraz/ref-sha@v1
         id: get-sha
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           ref: my_branch
       - run: echo $SHA

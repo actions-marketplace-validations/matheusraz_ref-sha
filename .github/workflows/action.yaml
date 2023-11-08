@@ -9,6 +9,8 @@ jobs:
     - name: Test
       uses: matheusraz/ref-sha@main
       id: get_sha
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         ref: staging/v6
     
